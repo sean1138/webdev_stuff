@@ -7,3 +7,5 @@ testel.html is a great concept that I stole from http://www.cs.tut.fi/~jkorpela/
 
 The worstcase images are my own measurements made in browsers for viewport dimensions before responsive design became the hip new thing - strengthening the idea that you should have nothing break or be out of place in a 1000x600 viewport design space.
 
+002.css is my attempt at a somewhat structured, flexible, and hopefully responsive friendly grid system.
+
