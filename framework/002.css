@@ -9,7 +9,7 @@ article, aside, canvas, details, embed, figcaption, figure, footer, header, hgro
 command, datalist, keygen, mark, meter, progress, rp, rt, ruby, time, wbr {display:inline;}
 audio, canvas, progress, video {display: inline-block;vertical-align: baseline/*Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.*/;}
 /* Refine/enforce the preferred box model: Make borders and padding drawn inside the set width of your content. The margin is drawn outside.*/
-*, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+div, span, article, section, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
 /* using height:100% on html and body allows to style containers with a 100% height
  * the overflow declaration is to make sure there is a gutter for the scollbar in all browsers regardless of content
  * note that there is no font-size declaration set in this rule. If you wish to include one, you should use font-size: 100.01% to prevent bugs in IE and Opera
