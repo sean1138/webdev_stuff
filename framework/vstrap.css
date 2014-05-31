@@ -181,7 +181,7 @@ a:hover {text-decoration: underline;}
 a:focus {text-decoration: none;}
 a:focus/*,:focus*/ {outline: 1px dotted yellow;}
 a:hover,a:active {outline: 0;}
-a:active{color: #FF0000;}
+a:active{color: #FF0000; /*prevent transitions on click*/transition: none;}
 /*** END links ***/
 
 iframe{width:100%;}
