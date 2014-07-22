@@ -153,7 +153,9 @@ IFRAME{width:100%;}
 AUDIO:not([controls]) {display: none;height: 0;}
 /* Correct overflow displayed oddly in IE 9. */
 SVG:not(:root) {overflow: hidden;}
-
+/* http://frontendbabel.info/articles/about-viewport/ */
+@-ms-viewport {width: device-width;}
+@viewport {width: device-width;}
 /************************end reset**************************/
 /* #content{background:#CCC;}
 .onecol{margin:0 auto;padding:.0125em 1em 1em;width:800px;background:#FAFAFA;}
