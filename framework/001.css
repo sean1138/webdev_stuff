@@ -94,8 +94,10 @@ UL UL{list-style:circle;}
 UL UL UL{list-style:square;}
 DL, OL, UL {margin-top:.25em;margin-left: 3em; padding-left: 0em; list-style-position:outside;}
 /* nested lists get reduced margins and paddings */
-UL UL , OL OL, OL UL, UL OL {margin-left: 1em;list-style-position:outside;}
+UL UL , OL OL, OL UL, UL OL {margin-left: 1em;list-style-position:outside; }
+ul :where(ul), ol :where(ol), ol :where(ul), ul :where(ol) {border:1px solid red;}
 OL OL UL, UL OL UL, OL OL OL {margin-left: 1em;list-style-position:outside;}
+ol :where(ol is:(ul)), ul :where(ol :where(ul)), ol :where(ol :where(ol)) {border:1px solid green;}
 LI{margin:0 1em .5em 0;padding:0;text-indent:0em;}
 DT{/*float:left;clear:left;*/font-weight:bold; margin-right:.5em;}
 DD{margin-left:0;padding-left:0;-webkit-margin-start:0px;font-weight:normal;margin-bottom:.5em;}
