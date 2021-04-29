@@ -1,4 +1,4 @@
-/*** START normalize */
+** START normalize */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html{line-height:1.15;-webkit-text-size-adjust:100%}
 body{margin:0}
@@ -97,7 +97,7 @@ DL, OL, UL {margin-top:.25em;margin-left: 3em; padding-left: 0em; list-style-pos
 UL UL , OL OL, OL UL, UL OL {margin-left: 1em;list-style-position:outside; }
 ul :where(ul), ol :where(ol), ol :where(ul), ul :where(ol) {border:1px solid red;}
 OL OL UL, UL OL UL, OL OL OL {margin-left: 1em;list-style-position:outside;}
-ol :where(ol is:(ul)), ul :where(ol :where(ul)), ol :where(ol :where(ol)) {border:1px solid green;}
+/*ol :where(ol :where(ul)), ul :where(ol :where(ul)), ol :where(ol :where(ol)) {border:1px solid green;}*/
 LI{margin:0 1em .5em 0;padding:0;text-indent:0em;}
 DT{/*float:left;clear:left;*/font-weight:bold; margin-right:.5em;}
 DD{margin-left:0;padding-left:0;-webkit-margin-start:0px;font-weight:normal;margin-bottom:.5em;}
@@ -165,4 +165,4 @@ P{margin:.75em 0;}
 @media all and (orientation:landscape) {
 /* Style adjustments for landscape mode goes here */
 }
-/******** end mobile devices ********/
+/******** end mobile devices *******
