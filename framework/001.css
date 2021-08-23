@@ -146,11 +146,25 @@ input[type=button], input[type=submit], button{white-space:nowrap;}/*buttons wit
 a:link {color: #0000FF;text-decoration:none;}
 a:visited {color: #800080;text-decoration: none;}
 a:hover {text-decoration: underline;}
-a:focus {text-decoration: none;}
-a:focus/*,:focus*/ {outline: 1px dotted yellow;}
 a:hover,a:active {outline: none;}
 a:active{color: #FF0000;}
 /*** end links ***/
+/*** start focus styles ***/
+a:focus {text-decoration: none;}
+a:focus, b[type=button]:focus,[type=reset]:focus,[type=submit]:focus, button:focus, [type=radio]:focus, [type=checkbox]:focus, select:focus {
+	outline: 1px solid red;
+}
+a:focus:not(:focus-visible), b[type=button]:focus:not(:focus-visible),[type=reset]:focus:not(:focus-visible),[type=submit]:focus:not(:focus-visible), button:focus:not(:focus-visible), [type=radio]:focus:not(:focus-visible), [type=checkbox]:focus:not(:focus-visible), select:focus:not(:focus-visible) {
+	outline: none;
+		/* undo all the above focused button styles
+			 if the button has focus but the browser wouldn't normally
+			 show default focus styles - no focus effect from mouse click */
+}
+a:focus-visible, b[type=button]:focus-visible,[type=reset]:focus-visible,[type=submit]:focus-visible, button:focus-visible, [type=radio]:focus-visible, [type=checkbox]:focus-visible, select:focus-visible {
+/* some even *more* exciting button focus styles */
+  outline: 1px solid green;
+}
+/*** end focus styles ***/
 IFRAME{width:100%;}
 /************************end reset**************************/
 #content{background:#CCC;}
