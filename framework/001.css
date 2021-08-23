@@ -155,14 +155,15 @@ a:focus, b[type=button]:focus,[type=reset]:focus,[type=submit]:focus, button:foc
 	outline: 1px solid red;
 }
 a:focus:not(:focus-visible), b[type=button]:focus:not(:focus-visible),[type=reset]:focus:not(:focus-visible),[type=submit]:focus:not(:focus-visible), button:focus:not(:focus-visible), [type=radio]:focus:not(:focus-visible), [type=checkbox]:focus:not(:focus-visible), select:focus:not(:focus-visible) {
-	outline: none;
-		/* undo all the above focused button styles
+	/* undo all the above focused button styles
 			 if the button has focus but the browser wouldn't normally
 			 show default focus styles - no focus effect from mouse click */
+	outline: none;
+
 }
 a:focus-visible, b[type=button]:focus-visible,[type=reset]:focus-visible,[type=submit]:focus-visible, button:focus-visible, [type=radio]:focus-visible, [type=checkbox]:focus-visible, select:focus-visible {
-/* some even *more* exciting button focus styles */
-  outline: 1px solid green;
+	/*no focus effect from mouse click*/
+	outline: 1px solid green;
 }
 /*** end focus styles ***/
 IFRAME{width:100%;}
