@@ -151,19 +151,25 @@ a:active{color: #FF0000;}
 /*** end links ***/
 /*** start focus styles ***/
 a:focus {text-decoration: none;}
+a, b[type=button],[type=reset],[type=submit], button, [type=radio], [type=checkbox], select{
+	/*for multiple outline :focus-visible rule below*/
+	/*border: 1px solid transparent;*/
+	/*removes some browser mouseover effects on button/input elements*/
+}
 a:focus, b[type=button]:focus,[type=reset]:focus,[type=submit]:focus, button:focus, [type=radio]:focus, [type=checkbox]:focus, select:focus {
 	outline: 1px solid red;
 }
 a:focus:not(:focus-visible), b[type=button]:focus:not(:focus-visible),[type=reset]:focus:not(:focus-visible),[type=submit]:focus:not(:focus-visible), button:focus:not(:focus-visible), [type=radio]:focus:not(:focus-visible), [type=checkbox]:focus:not(:focus-visible), select:focus:not(:focus-visible) {
-	/* undo all the above focused button styles
-			 if the button has focus but the browser wouldn't normally
-			 show default focus styles - no focus effect from mouse click */
+	/* undo all the above focused button styles if the button has focus but the browser wouldn't normally show default focus styles - no focus effect from mouse click */
 	outline: none;
 
 }
 a:focus-visible, b[type=button]:focus-visible,[type=reset]:focus-visible,[type=submit]:focus-visible, button:focus-visible, [type=radio]:focus-visible, [type=checkbox]:focus-visible, select:focus-visible {
 	/*no focus effect from mouse click*/
+	/*to do multiple colored outlines it seems best to use border+outline, need to have transparent border on the elements to prevent jumping/movement when focused though*/
+	/*border-color: red;*/
 	outline: 1px solid green;
+	outline-offset: 1px;
 }
 /*** end focus styles ***/
 IFRAME{width:100%;}

@@ -22,7 +22,7 @@
   </script>
 </head>
 <body id="content">
-  <div class="onecol">
+  <div class="onecol" style="background:#999">
     <h1>Testing display of HTML elements</h1>
     <h2>This is 2nd level heading</h2>
     <p>This is a test paragraph.</p>
@@ -43,7 +43,7 @@
     </blockquote>
     <p>The following contains address information about the author, in an <code>address</code> element.</p>
     <address> <a href="http://www.cs.tut.fi/%7Ejkorpela/personal.html" hreflang="en" lang="fi">Jukka Korpela</a>, <a href="mailto:jkorpela@cs.tut.fi">jkorpela@cs.tut.fi</a>
-      <br>Päivänsäteenkuja 4 A, Espoo, Finland</address>
+      <br>PÃ¤ivÃ¤nsÃ¤teenkuja 4 A, Espoo, Finland</address>
     <h2>Lists</h2>
     <p>This is a paragraph before an <strong>unnumbered</strong> list (<code>ul</code>). Note that the spacing between a paragraph and a list before or after that is hard to tune in a user style sheet. You can't guess which paragraphs are logically related to a list, e.g. as a "list header".</p>
     <ul>
@@ -211,7 +211,7 @@
       <li> <a href="http://www.unicode.org/versions/Unicode4.0.0/ch06.pdf" title="Writing Systems and Punctuation" type="application/pdf">Unicode Standard, chapter&nbsp;6</a>
       </li>
     </ul>
-    <p>This is a text paragraph that contains some inline links. Generally, inline links (as opposite to e.g. links lists) are problematic from the <a href="http://www.useit.com/">usability</a> perspective, but they may have use as “incidental”, less relevant links. See the document <cite><a href="http://www.cs.tut.fi/%7Ejkorpela/www/links.html">Links Want To Be Links</a></cite>.</p>
+    <p>This is a text paragraph that contains some inline links. Generally, inline links (as opposite to e.g. links lists) are problematic from the <a href="http://www.useit.com/">usability</a> perspective, but they may have use as â€œincidentalâ€, less relevant links. See the document <cite><a href="http://www.cs.tut.fi/%7Ejkorpela/www/links.html">Links Want To Be Links</a></cite>.</p>
     <h2>Forms</h2>
     <form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
       <div>
@@ -319,7 +319,7 @@
       </tbody>
     </table>
     <h2>Character test</h2>
-    <p>The following table has some sample characters with annotations. If the browser’s default font does not contain all of them, they may get displayed using backup fonts. This may cause stylistic differences, but it should not prevent the characters from being displayed at all.</p>
+    <p>The following table has some sample characters with annotations. If the browserâ€™s default font does not contain all of them, they may get displayed using backup fonts. This may cause stylistic differences, but it should not prevent the characters from being displayed at all.</p>
     <table>
       <tbody>
         <tr>
@@ -328,12 +328,12 @@
           <th>Notes</th>
         </tr>
         <tr>
-          <td>ê</td>
+          <td>Ãª</td>
           <td>e with circumflex</td>
           <td>Latin 1 character, should be ok</td>
         </tr>
         <tr>
-          <td>—</td>
+          <td>â€”</td>
           <td>em dash</td>
           <td>Windows Latin 1 character, should be ok, too</td>
         </tr>
@@ -364,9 +364,9 @@
     <h3>CSS-based hyphenation</h3>
     <p class="limited hyphens">Until recently the great majority of naturalists believed that species were immutable productions, and had been separately created. This view has been ably maintained by many authors.</p>
     <h3>JavaScript-driven hyphenation</h3>
-    <p class="limited hyphenate">Until re­cently the great ma­jor­ity of nat­u­ral­ists be­lieved that species were im­mutable pro­duc­tions, and had been sep­a­rately cre­ated. This view has been ably main­tained by many au­thors.</p>
+    <p class="limited hyphenate">Until reÂ­cently the great maÂ­jorÂ­ity of natÂ­uÂ­ralÂ­ists beÂ­lieved that species were imÂ­mutable proÂ­ducÂ­tions, and had been sepÂ­aÂ­rately creÂ­ated. This view has been ably mainÂ­tained by many auÂ­thors.</p>
     <h3>Explicit hyphenation hints (soft hyphens)</h3>
-    <p class="limited">Un­til re­cent­ly the great ma­jor­i­ty of nat­u­ral­ists be­lieved that spe­cies were im­mu­ta­ble pro­duc­tions, and had been sep­a­rate­ly cre­at­ed. This view has been ably main­tain­ed by many au­thors.</p>
+    <p class="limited">UnÂ­til reÂ­centÂ­ly the great maÂ­jorÂ­iÂ­ty of natÂ­uÂ­ralÂ­ists beÂ­lieved that speÂ­cies were imÂ­muÂ­taÂ­ble proÂ­ducÂ­tions, and had been sepÂ­aÂ­rateÂ­ly creÂ­atÂ­ed. This view has been ably mainÂ­tainÂ­ed by many auÂ­thors.</p>
     <hr title="Information about this document">
     <address> <a href="http://www.cs.tut.fi/%7Ejkorpela/personal.html" hreflang="en" lang="fi">Jukka Korpela</a>
     </address>
@@ -374,3 +374,56 @@
   </div>
 </body>
 </html>
+
+<div class="fb">
+  <div class="bb">
+    <h4><strong><span class="primaryNav-category-column-cell primaryNav-category-column-header">SPORTS</span></strong></h4>
+    <ul class="primaryNav-category-column primaryNav-category-column--25">
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">NFL Football</span></li>
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">NCAA College Football</span></li>
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">MLS Soccer</span></li>
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">NHL Hockey</span></li>
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">NBA Basketball</span></li>
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">Golf</span></li>
+    <li class="primaryNav-category-column-cell-padding"><a href="https://memberdeals.com/govets/?login=1"><span class="primaryNav-category-column-cell primaryNav-category-column-cell--all"><strong>VIEW ALL</strong></span></a></li>
+    </ul>
+  </div>
+  <div class="bb">
+    <h4><strong><span class="primaryNav-category-column-cell primaryNav-category-column-header">CONCERTS</span></strong></h4>
+    <ul class="primaryNav-category-column primaryNav-category-column--25">
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">Harry Styles</span></li>
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">Luke Combs</span></li>
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">The Weeknd</span></li>
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">Lady Gaga</span></li>
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">Luke Bryan</span></li>
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">Motley Crue</span></li>
+    <li class="primaryNav-category-column-cell-padding"><a href="https://memberdeals.com/govets/?login=1"><span class="primaryNav-category-column-cell primaryNav-category-column-cell--all"><strong>VIEW ALL</strong></span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="fb">
+  <div class="bb">
+    <h4><strong><span class="primaryNav-category-column-cell primaryNav-category-column-header">ON TOUR</span></strong></h4>
+    <ul class="primaryNav-category-column primaryNav-category-column--25">
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">JoJo Siwa</span></li>
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">Hamilton</span></li>
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">Cast Of Impractical Jokers</span></li>
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">Comedy Shows</span></li>
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">Family Events</span></li>
+    <li class="primaryNav-category-column-cell-padding"><a href="https://memberdeals.com/govets/?login=1"><span class="primaryNav-category-column-cell ">Broadway/Theater</span></a></li>
+    <li class="primaryNav-category-column-cell-padding"><a href="https://memberdeals.com/govets/?login=1"><span class="primaryNav-category-column-cell primaryNav-category-column-cell--all"><strong>VIEW ALL</strong></span></a></li>
+    </ul>
+  </div>
+  <div class="bb">
+    <h4><strong><span class="primaryNav-category-column-cell primaryNav-category-column-header">MAJOR EVENTS</span></strong></h4>
+    <ul class="primaryNav-category-column primaryNav-category-column--25">
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">Music Festivals</span></li>
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">Monster Jam</span></li>
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">Kentucky Derby</span></li>
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">US Open Golf</span></li>
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">US Open Tennis</span></li>
+    <li class="primaryNav-category-column-cell-padding"><span class="primaryNav-category-column-cell ">Professional Bull Riders</span></li>
+    <li class="primaryNav-category-column-cell-padding"><a href="https://memberdeals.com/govets/?login=1"><span class="primaryNav-category-column-cell primaryNav-category-column-cell--all"><strong>VIEW ALL</strong></span></a></li>
+    </ul>
+  </div>
+</div>

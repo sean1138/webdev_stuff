@@ -154,7 +154,49 @@ IFRAME{width:100%;}
 #content{background:#CCC;}
 .onecol{margin:0 auto;padding:.0125em 1em 1em;width:800px;background:#FAFAFA;}
 P{margin:.75em 0;}
+figure{margin:0;}
+img {
+  max-width: 100%;
+}
+img[width] {
+  width: auto; /* Defer to max-width */
+}
+img[width][height] {
+  height: auto; /* Preserve aspect ratio */
+}
 
+/* Let SVG scale without boundaries */
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+/*** START Ridiculously easy row and column layouts with Flexbox  ***/
+.vs-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.vs-col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+.vs-col-span-2 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+@media screen and (min-width: 720px) {
+  .vs-col {
+    flex: 1
+  }
+  .vs-col-span-2 {
+    flex: 2
+  }
+}
+/*** END Ridiculously easy row and column layouts with Flexbox  ***/
 /******** start mobile devices ********/
 @media all and (orientation:portrait) {
 /* Style adjustments for portrait mode goes here */
